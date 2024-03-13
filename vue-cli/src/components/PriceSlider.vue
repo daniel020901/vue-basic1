@@ -13,7 +13,7 @@
 
 <script>
 export default {
-    name:"slider-status",
+    name:"price-slider",
     data: function() {
         return {
             maxAmount: 50
@@ -22,16 +22,14 @@ export default {
     props:["sliderStatus", "maximum"],
     computed: {
         sliderState: function () {
-      return this.style.sliderStatus ? "d-flex" : "d-none";
+      return this.sliderStatus ? "d-flex" : "d-none";
     },
     }
 }
 </script>
 
 <style>
-.navbar{
-    background-color: transparent;
-}
+
 .fade-enter, .fade-leave-to {
     opacity: 0;
 }
